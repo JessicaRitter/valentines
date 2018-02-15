@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <div class="row" id="canvas">
+        <div class="col-12" align="center" id="1">
+            <svg height="500" width="600">
+                <circle id="pink-circletopr9" class="pink infinite animated wobble" r="10" cx="180" cy="420" fill="pink"/>
+                <circle id="red-circletopr8" class="red animated wobble" r="20" cx="120" cy="360" fill="red"/>
+                <circle id="pink-circletopr7" class="pink wobble animated" r="10" cx="80" cy="310" fill="pink"/>
+                <circle id="red-circletopr6" class="red animated wobble" r="20" cx="20" cy="250" fill="red"/>
+                <circle id="pink-circletopr5" class="pink animated wobble" r="10" cx="10" cy="185" fill="pink"/>
+                <circle id="red-circletopr4" class="red animated wobble" r="20" cx="20" cy="110" fill="red"/>
+                <circle id="pink-circletopr3" class="pink animated wobble" r="10" cx="70" cy="50" fill="pink"/>
+                <circle id="red-circletopr2" class="red animated wobble" r="20" cx="150" cy="60" fill="red"/>
+                <circle id="pink-circletopr1" class="pink animated wobble" r="10" cx="200" cy="100" fill="pink"/>
+                <circle id="red-circletop" class="red animated wobble" r="20" cx="250" cy="150" fill="red"/>
+                <circle id="pink-circlebottom" class="red animated wobble" r="10" cx="250" cy="480" fill="red"/>
+                <circle id="red-circletopl1" class="pink animated wobble" r="20" cx="320" cy="417" fill="pink"/>
+                <circle id="pink-circletopl2" class="red animated wobble" r="10" cx="380" cy="360" fill="red"/>
+                <circle id="red-circletopl3" class="pink animated wobble" r="20" cx="420" cy="310" fill="pink"/>
+                <circle id="pink-circletopl4" class="red animated wobble" r="10" cx="460" cy="250" fill="red"/>
+                <circle id="red-circletopl5" class="pink animated wobble" r="20" cx="500" cy="185" fill="pink"/>
+                <circle id="pink-circletopl6" class="red animated wobble" r="10" cx="490" cy="110" fill="red"/>
+                <circle id="red-circletopl7" class="pink animated wobble" r="20" cx="440" cy="50" fill="pink"/>
+                <circle id="pink-circletopl8" class="red animated wobble" r="10" cx="380" cy="60" fill="red"/>
+                <circle id="red-circletopl9" class="pink animated wobble" r="20" cx="320" cy="100" fill="pink"/>
+            </svg>
+            <script type="text/javascript">
+                $('circle#pink-circletopr9').on('click', function() {
+                    if($('#1').css('display')!='none'){
+                        $('#2').html($('#static').html()).show().siblings('div').hide();
+                    } else if ($('#2').css('display')!='none'){
+                        $('#1').show().siblings('div').hide();
+                    }
+                })
+
+
+            </script>
+            
+            <h1 class="rubberBand animated">Happy Valentines Day!</h1>
+        </div>
+        <div class="col-12" style="display:none" align="center" id="2">
+            <h1 class="fadeInRight animated">Yoda one for me</h1>
+            <h2 class="fadeInLeft animated">You hold the wooKEY to my heart</h2>
+            <h3 class="rotateInUpRight animated">Don't close the blast doors to your heart</h3>
+            <h1 class="rotateInDownRight animated">I love you to endor and back</h1>
+            <h2 class="rollIn animated">Will you be my valentine? Cause yoda-licious</h2>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
